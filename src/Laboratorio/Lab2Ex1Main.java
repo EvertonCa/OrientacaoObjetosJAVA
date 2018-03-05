@@ -1,3 +1,5 @@
+package Laboratorio;
+
 import java.util.Scanner;
 
 public class Lab2Ex1Main

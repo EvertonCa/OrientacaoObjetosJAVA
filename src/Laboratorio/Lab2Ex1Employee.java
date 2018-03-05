@@ -1,3 +1,5 @@
+package Laboratorio;
+
 public class Lab2Ex1Employee
 {
     public void setNome(String nome)
