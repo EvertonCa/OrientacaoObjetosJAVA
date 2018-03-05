@@ -16,8 +16,15 @@ public class Aula4Ex4SwapperDemo
         troca.setX(x);
         troca.setY(y);
 
+        System.out.println("Antes da troca:");
+        System.out.println("X = " + troca.getX());
+        System.out.println("Y = " + troca.getY());
+
         troca.swap();
-        System.out.println(troca.getX());
-        System.out.println(troca.getY());
+
+        System.out.println("Depois da troca:");
+        System.out.println("X = " + troca.getX());
+        System.out.println("Y = " + troca.getY());
+
     }
 }
