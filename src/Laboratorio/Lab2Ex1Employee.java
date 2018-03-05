@@ -40,10 +40,9 @@ public class Lab2Ex1Employee
         return salario * 12;
     }
 
-    public double aumento(double porcentagem)
+    public void aumento(double porcentagem)
     {
         salario = salario + ((porcentagem * 0.01) * salario);
-        return salario;
     }
 
     private String nome;
