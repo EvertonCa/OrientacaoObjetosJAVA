@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Lab2Ex1Main
 {
-    public static void main()
+    public static void main(String argv[])
     {
-        Scanner teclado = new Scanner(System.in);
-
         Lab2Ex1Employee funcionario1 = new Lab2Ex1Employee();
         Lab2Ex1Employee funcionario2 = new Lab2Ex1Employee();
+
+        Scanner teclado = new Scanner(System.in);
 
         String buffer;
         Double salario, aumento;
@@ -31,6 +31,9 @@ public class Lab2Ex1Main
         //EXIBIR SALARIO ANUAL DO PRIMEIRO FUNCIONARIO
         System.out.println("O salário anual do funcionário "+ funcionario1.getNome() + " " + funcionario1.getSobrenome()
                 + " é: R$" + funcionario1.salarioAnual());
+
+        //LIMPAR BUFFER DO SCANNER
+        buffer = teclado.nextLine();
 
         //SEGUNDO FUNCIONARIO
         System.out.println("Entre com o nome do segundo funcionário: ");
