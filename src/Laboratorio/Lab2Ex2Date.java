@@ -1,3 +1,10 @@
+/*
+Aluno: Everton Cardoso Acchetta
+RA: 22.117.061-6
+Disciplina: CC3642 - Orientação a Objetos
+
+Programa criado para receber o Dia, Mês e Ano do usuário e exibir a data formatada dd/mm/aaaa.
+ */
 package Laboratorio;
 import java.util.Scanner;
 
@@ -78,6 +85,7 @@ public class Lab2Ex2Date
         System.out.println("Valor inválido! Favor digitar uma data possivel!");
     }
 
+    //Exibe a data formatada.
     public void displayDate()
     {
         System.out.println("A data digitada foi: " + dia + "/" + mes + "/" + ano);

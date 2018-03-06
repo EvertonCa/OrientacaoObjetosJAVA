@@ -1,3 +1,11 @@
+/*
+Aluno: Everton Cardoso Acchetta
+RA: 22.117.061-6
+Disciplina: CC3642 - Orientação a Objetos
+
+Programa criado para receber o Nome, Sobrenome e Salario de 2 funcionários. Exibir o salário anual, aplicar um aumento
+e exibir o novo salário.
+ */
 package Laboratorio;
 
 import java.util.Scanner;

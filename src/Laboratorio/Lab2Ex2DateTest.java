@@ -1,3 +1,10 @@
+/*
+Aluno: Everton Cardoso Acchetta
+RA: 22.117.061-6
+Disciplina: CC3642 - Orientação a Objetos
+
+Programa criado para receber o Dia, Mês e Ano do usuário e exibir a data formatada dd/mm/aaaa.
+ */
 package Laboratorio;
 import java.util.Scanner;
 
