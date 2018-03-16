@@ -1,15 +1,24 @@
+/*
+Aluno: Everton Cardoso Acchetta
+RA: 22.117.061-6
+Disciplina: CC3642 - Orientação a Objetos
+
+Programa criado para calcular o perimetro e/ou a area de um triangulo
+ */
+
 package Laboratorio;
 
 import java.util.Scanner;
 
 public class Lab3Ex3Rectangle
 {
-    public Lab3Ex3Rectangle()
+    public Lab3Ex3Rectangle() // construtor padrao que define os lados como 1
     {
         length = 1;
         width = 1;
     }
 
+    //gets
     public double getLenght()
     {
         return length;
@@ -20,6 +29,7 @@ public class Lab3Ex3Rectangle
         return width;
     }
 
+    //sets que verificam se o valor esta entre 0.0 e 20.0 e alerta em caso de valor fora do especificado
     public void setLength(double length)
     {
         if(length > 0.0 && length < 20.0)
@@ -44,6 +54,7 @@ public class Lab3Ex3Rectangle
         }
     }
 
+    //calcula o perimetro
     public double calculaPerimetro()
     {
         double perimetro;
@@ -51,6 +62,7 @@ public class Lab3Ex3Rectangle
         return perimetro;
     }
 
+    //calcula a area
     public double calculaArea()
     {
         double area;
