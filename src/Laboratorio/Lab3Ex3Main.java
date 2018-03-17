@@ -68,6 +68,14 @@ public class Lab3Ex3Main
                     System.out.println("AREA = " + triangulo1.calculaArea());
                     break;
                 }
+
+                default: //opcao invalida
+                {
+                    System.out.println("|-----------------------------------------------|");
+                    System.out.println("|       Favor entrar com uma opcao valida!      |");
+                    System.out.println("|-----------------------------------------------|");
+                    break;
+                }
             }
         }
     }
