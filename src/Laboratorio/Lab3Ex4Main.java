@@ -1,3 +1,11 @@
+/*
+Aluno: Everton Cardoso Acchetta
+RA: 22.117.061-6
+Disciplina: CC3642 - Orientação a Objetos
+
+Programa criado para receber uma hora (hh:mm:ss), manipular essa hora e a exibir no formato universal ou AM/PM
+ */
+
 package Laboratorio;
 
 import java.util.Scanner;
@@ -10,10 +18,12 @@ public class Lab3Ex4Main
         int hora, minuto, segundo;
         boolean teste = true;
 
+        //mensagem de Welcome
         System.out.println("|-----------------------------------------------|");
         System.out.println("|       Bem vindo ao Time Manipulator 3000      |");
         System.out.println("|-----------------------------------------------|");
 
+        //entrada de valores do usuario
         System.out.println("Entre com a hora desejada (0 - 23 horas): ");
         hora = teclado.nextInt();
 
@@ -23,8 +33,10 @@ public class Lab3Ex4Main
         System.out.println("Entre com o segundo desejado (0 - 59 segundos): ");
         segundo = teclado.nextInt();
 
+        //criacao do objeto com os dados do usuario
         Lab3Ex4Time2 tempo = new Lab3Ex4Time2(hora, minuto, segundo);
 
+        //menu de metodos
         while(teste)
         {
             int opcao;
@@ -42,7 +54,7 @@ public class Lab3Ex4Main
 
             switch (opcao)
             {
-                case 0:
+                case 0: //encerra o programa
                 {
                     System.out.println("|-----------------------------------------------|");
                     System.out.println("|   Obrigado por usar o Time Manipulator 3000   |");
@@ -51,7 +63,7 @@ public class Lab3Ex4Main
                     break;
                 }
 
-                case 1:
+                case 1: //incrementa 1 segundo
                 {
                     tempo.tick();
                     System.out.println("|-----------------------------------------------|");
@@ -60,7 +72,7 @@ public class Lab3Ex4Main
                     break;
                 }
 
-                case 2:
+                case 2: //incrementa 1 minuto
                 {
                     tempo.incrementMinute();
                     System.out.println("|-----------------------------------------------|");
@@ -69,7 +81,7 @@ public class Lab3Ex4Main
                     break;
                 }
 
-                case 3:
+                case 3: //incrementa 1 hora
                 {
                     tempo.incrementHour();
                     System.out.println("|-----------------------------------------------|");
@@ -78,7 +90,7 @@ public class Lab3Ex4Main
                     break;
                 }
 
-                case 4:
+                case 4: //mostra o tempo no formato HH:MM:SS
                 {
                     String saida;
                     saida = tempo.toUniversalString();
@@ -88,7 +100,7 @@ public class Lab3Ex4Main
                     break;
                 }
 
-                case 5:
+                case 5: // mostra o tempo no formato HH:MM:SS AM/PM
                 {
                     String saida;
                     saida = tempo.toString();
@@ -98,7 +110,7 @@ public class Lab3Ex4Main
                     break;
                 }
 
-                default:
+                default: // em caso de opcao invalida
                 {
                     System.out.println("|-----------------------------------------------|");
                     System.out.println("|       Favor entrar com uma opcao valida!      |");

@@ -1,3 +1,11 @@
+/*
+Aluno: Everton Cardoso Acchetta
+RA: 22.117.061-6
+Disciplina: CC3642 - Orientação a Objetos
+
+Programa criado para receber uma hora (hh:mm:ss), manipular essa hora e a exibir no formato universal ou AM/PM
+ */
+
 package Laboratorio;
 
 public class Lab3Ex4Time2
@@ -75,7 +83,7 @@ public class Lab3Ex4Time2
                 getMinute(), getSecond(), (getHour() < 12 ? "AM" : "PM"));
     }
 
-    public void tick()
+    public void tick() // incrementa 1 segundo no tempo, incrementando 1 minuto caso os segundos passem de 59
     {
         if(second < 59)
         {
@@ -88,7 +96,7 @@ public class Lab3Ex4Time2
         }
     }
 
-    public void incrementMinute()
+    public void incrementMinute() // incrementa 1 minuto no tempo, incrementando 1 hora caso os minutos passem de 59
     {
         if(minute < 59)
         {
@@ -101,7 +109,7 @@ public class Lab3Ex4Time2
         }
     }
 
-    public void incrementHour()
+    public void incrementHour() // incrementa 1 hora no tempo, zerando caso passe de 23 horas.
     {
         if(hour < 23)
         {
